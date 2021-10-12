@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: scroll;
+}
+
+header {
+    margin: 40px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 7.5px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header img {
+    width: 30px;
+    height: 15px;
+}
+
+header pre {
+    font-size: 20px;
+}
+
+.item-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item {
+    width: 90%;
+    background-color: white;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 7.5px;
+    display: flex;
+    align-items: center;
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+}
+
+.item .foods {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.item .icon {
+    display: flex;
+    flex-direction: column;
+}

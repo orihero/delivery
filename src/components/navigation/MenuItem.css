@@ -1,0 +1,26 @@
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-right: 20px;
+    padding: 15px 10px;
+    border-radius: 7.5px;
+}
+
+.menu-item span {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.menu-item:hover {
+    transition: 0.2s linear;
+    margin-left: 5px;
+}
+
+.active {
+    background-color: #7367f0;
+    box-shadow: 0 0 10px 1px rgb(115 103 240 / 70%);
+}

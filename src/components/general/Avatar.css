@@ -1,0 +1,24 @@
+.avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.avatar .name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    margin-left: 20px;
+}
+
+.avatar .details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
