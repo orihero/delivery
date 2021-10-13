@@ -27,7 +27,7 @@ function AppRouter() {
 	}
 	console.log({ authed });
 	return (
-		<BrowserRouter key={authed}>
+		<BrowserRouter>
 			<Switch>
 				{!authed ? (
 					<>

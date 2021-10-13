@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { requests } from '../../api/requests';
 import '../../App.css';
+import { userLoggedIn } from '../../store/slices/user-slice';
 
 function LoginScreen({ history }) {
 	const dispatch = useDispatch();
@@ -18,7 +19,7 @@ function LoginScreen({ history }) {
 					return;
 				}
 				localStorage.setItem('user', JSON.stringify(res.data));
-
+				dispatch(userLoggedIn(res.data));
 				history.push('/shop');
 			}
 		} catch (error) {

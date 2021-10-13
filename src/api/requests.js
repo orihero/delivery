@@ -37,7 +37,7 @@ export let requests = {
   },
   restaurants: {
     getRestaurants: () => axios.get("/restaurant"),
-    createRestaurant: (credentials) => axios.past("/restaurant", credentials),
+    createRestaurant: (credentials) => axios.post("/restaurant", credentials),
   },
   file: {
     upload: (data) => axios.post("/upload", data),
