@@ -4,10 +4,12 @@ import AuthRoute from "../components/general/AuthRoute";
 import Header from "../components/navigation/Header";
 import SideBar from "../components/navigation/SideBar";
 import Dashboard from "../screens/dashboard/dashboard";
+import Edit from "../screens/edit/Edit";
 import LoginScreen from "../screens/login/LoginScreen";
 import Register from "../screens/register/register";
 import Shop from "../screens/shop/shop";
 import "../screens/shop/shop.css";
+import AddRestaurant from "../screens/add-restaurant/AddRestarant"
 
 function AppRouter() {
   let str = localStorage.getItem("user");
@@ -42,6 +44,16 @@ function AppRouter() {
                   component={Dashboard}
                 />
                 <AuthRoute path="/shop" authed={authed} component={Shop} />
+                <AuthRoute
+                  path="/restaurant-edit"
+                  authed={authed}
+                  component={Edit}
+                />
+                <AuthRoute
+                  path="/add-restaurant"
+                  authed={authed}
+                  component={AddRestaurant}
+                />
               </div>
             </div>
           </>

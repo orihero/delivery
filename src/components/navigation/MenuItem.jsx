@@ -20,7 +20,7 @@ function MenuItem({
   };
   return (
     <div
-      className={location.pathname === link ? "menu-item active" : "menu-item"}
+      className={location.pathname.indexOf(link) !== -1 ? "menu-item active" : "menu-item"}
       onClick={onPress}
     >
       <FeatherIcon icon={icon} />
