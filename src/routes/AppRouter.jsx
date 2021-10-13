@@ -22,11 +22,12 @@ function AppRouter() {
 		dispatch(userLoggedIn(parsedUser));
 	}
 	let authed = false;
-	if (user !== null) {
+	if (Object.keys(user).length > 0) {
 		authed = true;
 	}
+	console.log({ authed });
 	return (
-		<BrowserRouter>
+		<BrowserRouter key={authed}>
 			<Switch>
 				{!authed ? (
 					<>
